@@ -1,0 +1,444 @@
+/* Global Styles */
+
+:root {
+    --primary-color: #bd0000;
+    --dark-color: #000000;
+    --light-color: #a334ab;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 1vw;
+    max-width: 100%;
+}
+
+body {
+    font-size: 1vw;
+    line-height: 1.6;
+    height: max-content;
+    width: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('./images/collegeimgfhd.jpg');
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 250, 240);
+}
+
+/* Utilities */
+
+.App {
+    text-align: center;
+}
+.responsive-img {
+    width: 10vw;
+    height: auto;
+}
+
+/* //////////////////////////////////////////////701 */
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+}
+
+.App-header {
+    background-color: #fbfaf4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+.onhovereffect:hover {
+    background-color: rgba(0, 64, 175, 0.343);
+}
+.textblink {
+    animation: blink 3s linear infinite;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+@keyframes blink {
+    0% {
+        opacity: 0.8;
+        color: #a334ab;
+    }
+    50% {
+        opacity: 01;
+        color: red;
+    }
+    100% {
+        opacity: 1;
+        color: rgb(1, 65, 194);
+    }
+}
+.stelthcontent {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.movingcontent {
+    float: right;
+    width: 87vw;
+    margin: 0.4vw;
+    max-height: 77vh;
+    overflow-y: auto;
+}
+.homepage {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+.homemenu {
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    position: fixed;
+    bottom: 8vh;
+    display: flex;
+}
+.homenav-btn {
+    background-color: rgb(143, 131, 196);
+    border: 2px solid white;
+    height: auto;
+    width: max-content;
+    margin: 0.8vw;
+    padding: 1.5vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8vw;
+}
+.homenav-btn:hover {
+    background-color: rgb(255, 0, 0);
+}
+.flashnews {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(238, 232, 170, 0.9);
+    border-radius: 0.5vw;
+    border: rgb(255, 255, 255) solid 2px;
+    color: antiquewhite;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.flashnewsbottom {
+    position: fixed;
+    bottom: 1vh;
+    z-index: 1;
+    background-color: rgba(238, 232, 170, 0.9);
+    border-radius: 0.5vw;
+    border: rgb(255, 255, 255) solid 2px;
+    color: antiquewhite;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+}
+.homepage-content {
+    max-width: 99%;
+    justify-content: center;
+    align-items: center;
+}
+.upper-bar {
+    height: 2vw;
+    background-color: rgb(187, 26, 5);
+    color: white;
+    justify-content: left;
+    text-align: left;
+    font-size: 1vw;
+    display: flex;
+}
+.upper-bar-btn {
+    height: auto;
+    width: fit-content;
+    color: #fff;
+    margin: auto;
+    padding: auto;
+    border-radius: 3px;
+}
+.upper-bar-btn:hover {
+    background: var(--primary-color);
+    border: 2px solid white;
+}
+.heading-section {
+    height: auto;
+    margin: 0.3vw;
+    background-image: linear-gradient(
+        to left,
+        rgba(93, 0, 255, 0.34),
+        rgba(255, 255, 255, 0.34),
+        rgba(93, 0, 255, 0.34)
+    );
+    padding: auto;
+    color: rgb(169, 45, 0);
+    border: 0.15vw solid white;
+    border-radius: 0.7vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.headinghome {
+    height: auto;
+    margin: 0.3vw;
+    padding: auto;
+    color: rgb(169, 45, 0);
+    border-radius: 0.7vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.college-name {
+    margin: auto;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    font-size: 2.3vw;
+    font-weight: 1000;
+    width: 100%;
+    height: auto;
+}
+.college-background {
+    height: 77vh;
+    width: 100%;
+}
+.menu {
+    height: 77.34vh;
+    max-width: 13%;
+    float: left;
+    width: max-content;
+    background-color: #bd0000;
+    margin: 0.34vw;
+    padding: 0.4vw;
+    border: #fff 2px solid;
+    border-radius: 0.8vw;
+    justify-content: center;
+    text-align: left;
+    display: block;
+    position: sticky;
+    top: 0;
+}
+.navbar {
+    max-width: 15%;
+    margin: 0.1vw;
+    max-height: 77vh;
+    float: left;
+    background-color: var(--primary-color);
+    padding: 0.5vw;
+    color: rgb(169, 45, 0);
+    border: 2px solid white;
+    border-radius: 0.8vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar-btn {
+    font-size: 1vw;
+    display: inline;
+    color: #fff;
+    padding: 0.2vw;
+    padding-left: 0.8vw;
+    padding-right: 0.8vw;
+    border-radius: 0.4vw;
+    border: 2px solid var(--primary-color);
+}
+.navbar-btn:hover {
+    background: var(--primary-color);
+    border: 2px solid white;
+    color: white;
+}
+.navbar2 {
+    width: max-content;
+    margin: 0.5vw;
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 0.5vw;
+    color: rgb(169, 45, 0);
+    border: 2px solid white;
+    border-radius: 0.8vw;
+}
+.branchmenu {
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    position: fixed;
+    bottom: 30vh;
+    display: flex;
+}
+.branch-name {
+    background-color: rgba(134, 0, 0, 0.3433);
+    border: 2px solid white;
+    color: white;
+    height: auto;
+    width: auto;
+    margin: 0.8vw;
+    padding: 1.5vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8vw;
+}
+.branch-name:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.carousel-container {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 95vw;
+    height: auto;
+}
+.carousel {
+    border-radius: 0.8vw;
+}
+.corouselcss {
+    background: var(--primary-color);
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+.carousel-inner {
+    padding: auto;
+    border-radius: 0.8vw;
+}
+.welcome {
+    justify-content: center;
+    text-align: center;
+    margin: 0.4vh;
+    padding: auto;
+    background: transparent;
+}
+.welcomedept {
+    background-image: url('./images/comp09.jpg');
+    background-repeat: no-repeat;
+    background-size: 87vw;
+    width: auto;
+    color: maroon;
+    font-weight: bold;
+    height: 77vh;
+}
+.card {
+    max-height: 60em;
+    max-width: 80vw;
+    border-radius: 10px;
+    margin: auto;
+    background: transparent;
+}
+
+.welcome-departments {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.welcome-departments-left {
+    width: 37%;
+    float: left;
+}
+.welcome-departments-right {
+    width: 34%;
+}
+.wlc-dept-name {
+    font-size: 100%;
+    color: white;
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: var(--primary-color);
+}
+.wlc-dept-name:hover {
+    background-color: rgb(160, 0, 0);
+}
+
+.d-block {
+    border-radius: 10px;
+}
+
+.quicklinks {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+.quicklinks-left {
+    justify-content: center;
+    text-align: left;
+    width: fit-content;
+    float: left;
+    background: transparent;
+}
+.quicklinks-right {
+    justify-content: center;
+    text-align: left;
+    width: auto;
+    background: transparent;
+}
+.list-group-item {
+    background-color: rgba(255, 234, 230, 0.753);
+}
+.studentscorner {
+    color: #800202;
+    justify-content: center;
+    display: flex;
+}
+.studentscorner-item {
+    border: 2px solid plum;
+}
+
+.principalmsg {
+    display: flex;
+    width: fit-content;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 0.8vh;
+}
+.campus-visuals {
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid grey;
+    height: auto;
+    border-radius: 10px;
+    height: 100%;
+}
+.footer {
+    padding: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.footer-logoline {
+    margin: 20px;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* //////////////////////////////////////////////////////////////////700 */
